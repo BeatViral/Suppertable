@@ -7,6 +7,7 @@ This repository currently contains a self-contained landing page prototype for t
 ## What is included
 
 - Premium landing page for SupperTable
+- Guest, host, and admin dashboard prototype
 - Guest, host, and admin/compliance journey sections
 - Trust-led marketplace positioning
 - Trust, food safety, guest verification, and council-aware messaging
@@ -17,6 +18,8 @@ This repository currently contains a self-contained landing page prototype for t
 ## Open locally
 
 Open `index.html` directly in a browser.
+
+Open `dashboard.html` to explore the guest, host, and admin product workspace prototype.
 
 ## Project direction
 

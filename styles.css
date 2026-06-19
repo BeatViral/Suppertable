@@ -737,6 +737,17 @@ input {
   font-weight: 950;
 }
 
+.dashboard-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  color: #fff;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .form-note {
   min-height: 1.3em;
   font-size: 0.9rem;
