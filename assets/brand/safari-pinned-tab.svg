@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect x="22" y="22" width="468" height="468" rx="110" fill="#000"/>
+  <rect x="50" y="50" width="412" height="412" rx="92" fill="#000"/>
+  <text x="256" y="356"
+    text-anchor="middle"
+    font-family="Inter, Avenir Next, Segoe UI, Arial, sans-serif"
+    font-size="330"
+    font-weight="900"
+    letter-spacing="0"
+    fill="#fff">S</text>
+  <path d="M139 420c70 42 197 42 268 0"
+    fill="none"
+    stroke="#000"
+    stroke-width="24"
+    stroke-linecap="round"/>
+  <circle cx="140" cy="254" r="19" fill="#000"/>
+  <circle cx="403" cy="330" r="18" fill="#000"/>
+  <path d="M400 156l13 35 36 13-36 13-13 36-13-36-36-13 36-13z" fill="#000"/>
+</svg>

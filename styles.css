@@ -92,15 +92,12 @@ input {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
+  flex: 0 0 auto;
   width: 38px;
   height: 38px;
-  place-items: center;
-  border-radius: 8px;
-  color: #fff;
-  background:
-    linear-gradient(135deg, var(--pomegranate), var(--saffron) 54%, var(--cilantro));
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.18));
 }
 
 .nav-links {
@@ -748,12 +745,26 @@ input {
 .site-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 18px;
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   padding: 28px 0 44px;
   color: rgba(23, 18, 15, 0.62);
   font-weight: 800;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+
+.footer-brand img {
+  display: block;
+  width: 28px;
+  height: 28px;
 }
 
 @media (max-width: 980px) {
