@@ -3,7 +3,7 @@ const paths = {
     kicker: "Guest app",
     title: "Find a table that feels personal, verified, and delicious.",
     steps: [
-      "Browse approved listings by cuisine, date, price, dietary needs, and suburb.",
+      "Browse verified listings by cuisine, date, price, dietary needs, and suburb.",
       "Open a meal page with photos, host story, set menu, allergens, seats, and house rules.",
       "Book prepaid seats, complete guest verification, and receive the exact address after confirmation.",
       "Arrive for a small on-premise meal, then review the host and dining experience.",
@@ -24,7 +24,7 @@ const paths = {
     title: "Give operators, councils, and insurers a serious record of control.",
     steps: [
       "Review host applications, kitchen evidence, training state, menu risk, and insurance status.",
-      "Approve, pause, reject, or request more information before a listing is visible.",
+      "Mark hosts eligible, pause listings, reject applications, or request more information before anything is visible.",
       "Track incidents, guest reports, repeat complaints, menu changes, and audit history.",
       "Export compliance summaries for pilot reviews, insurance conversations, or council meetings.",
     ],

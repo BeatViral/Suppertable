@@ -8,7 +8,7 @@ This repository currently contains a self-contained landing page prototype for t
 
 - Premium landing page for SupperTable
 - Guest, host, and admin/compliance journey sections
-- AI-assisted marketplace positioning
+- Trust-led marketplace positioning
 - Trust, food safety, guest verification, and council-aware messaging
 - Generated hero image stored locally in `assets/`
 - Complete logo, favicon, app-icon, and social-card package in `assets/brand/`
