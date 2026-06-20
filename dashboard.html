@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SupperTable Dashboards | Guest, Host, Admin</title>
+    <title>SupperTable Dashboards | Customer, Host, Admin</title>
     <meta
       name="description"
-      content="SupperTable dashboard prototype for guests, hosts, and compliance admins."
+      content="SupperTable dashboard prototype for customers, hosts, and compliance admins."
     />
     <meta name="theme-color" content="#17120f" />
     <link rel="icon" href="favicon.ico" sizes="any" />
@@ -24,7 +24,7 @@
 
       <div class="role-switcher" role="tablist" aria-label="Dashboard role">
         <button class="role-tab active" type="button" data-view="guest" role="tab" aria-selected="true">
-          Guest
+          Customer
         </button>
         <button class="role-tab" type="button" data-view="host" role="tab" aria-selected="false">
           Host
@@ -36,7 +36,7 @@
 
       <nav class="side-nav" aria-label="Workspace shortcuts">
         <a href="#guest-discover">Discover meals</a>
-        <a href="#guest-booking">Booking detail</a>
+        <a href="#guest-booking">Order detail</a>
         <a href="#host-onboarding">Host onboarding</a>
         <a href="#admin-queue">Compliance queue</a>
       </nav>
@@ -44,7 +44,7 @@
       <div class="pilot-note">
         <span>Pilot mode</span>
         <strong>Northern Rivers</strong>
-        <p>10-20 vetted hosts, 2-6 guests per table, no delivery, no takeaway.</p>
+        <p>10-20 vetted hosts, pickup and delivery only, no dine-in, no open-ended restaurant menu.</p>
       </div>
     </aside>
 
@@ -52,7 +52,7 @@
       <header class="app-topbar">
         <div>
           <p class="app-kicker">Product prototype</p>
-          <h1 id="dashboard-title">Guest dashboard</h1>
+          <h1 id="dashboard-title">Customer dashboard</h1>
         </div>
         <div class="topbar-actions" aria-label="Account actions">
           <button class="icon-button" type="button" aria-label="Notifications">!</button>
@@ -66,14 +66,14 @@
       <section class="dashboard-view active" id="guest-view" data-view-panel="guest" aria-labelledby="guest-title">
         <div class="workspace-hero">
           <div>
-            <p class="app-kicker">Guest experience</p>
-            <h2 id="guest-title">Find verified home dining without guessing what is safe, real, or worth booking.</h2>
+            <p class="app-kicker">Customer experience</p>
+            <h2 id="guest-title">Find verified home-cooked meals for pickup or delivery.</h2>
             <p>
-              Guests land in a warm but controlled marketplace: identity setup, dietary profile, verified listings,
-              host reviews, house rules, locked address, and a booking flow that feels calmer than a restaurant app.
+              Customers land in a warm but controlled marketplace: identity setup, dietary profile, verified kitchens,
+              host reviews, pickup windows, delivery options, packaging notes, and an order flow that feels calmer than a restaurant app.
             </p>
           </div>
-          <div class="readiness-panel" aria-label="Guest signup readiness">
+          <div class="readiness-panel" aria-label="Customer signup readiness">
             <div class="panel-title">
               <span>Signup readiness</span>
               <strong>72%</strong>
@@ -83,7 +83,7 @@
               <li class="done">Email and phone verified</li>
               <li class="done">Dietary profile started</li>
               <li class="current">Identity check pending</li>
-              <li>Payment method required before booking</li>
+              <li>Payment method required before ordering</li>
             </ul>
           </div>
         </div>
@@ -92,15 +92,15 @@
           <div class="section-heading">
             <div>
               <p class="app-kicker">Upon signup</p>
-              <h3 id="signup-title">Guest chooses intent, trust setup, and food preferences.</h3>
+              <h3 id="signup-title">Customer chooses fulfilment, trust setup, and food preferences.</h3>
             </div>
             <button class="quiet-button" type="button">Continue setup</button>
           </div>
           <div class="quick-grid">
             <article>
               <span>1</span>
-              <h4>I want to dine</h4>
-              <p>Browse verified home tables, save favourites, and book prepaid seats.</p>
+              <h4>I want meals</h4>
+              <p>Browse verified home kitchens, save favourites, and place prepaid pickup or delivery orders.</p>
             </article>
             <article>
               <span>2</span>
@@ -110,12 +110,12 @@
             <article>
               <span>3</span>
               <h4>Verify once</h4>
-              <p>Phone, email, ID check, guest code of conduct, and emergency contact.</p>
+              <p>Phone, email, basic account check, customer conduct, and emergency contact.</p>
             </article>
             <article>
               <span>4</span>
-              <h4>Booking controls</h4>
-              <p>Saved payment, cancellation rules, address release, and arrival instructions.</p>
+              <h4>Order controls</h4>
+              <p>Saved payment, cancellation rules, pickup instructions, delivery notes, and support trail.</p>
             </article>
           </div>
         </section>
@@ -124,7 +124,7 @@
           <div class="section-heading">
             <div>
               <p class="app-kicker">Discover</p>
-              <h3 id="discover-title">Verified tables near you</h3>
+              <h3 id="discover-title">Verified kitchens near you</h3>
             </div>
             <div class="view-controls" role="group" aria-label="Listing view">
               <button class="active" type="button">Grid</button>
@@ -142,11 +142,19 @@
               <input type="date" value="2026-06-27" />
             </label>
             <label>
-              Guests
+              Portions
               <select>
-                <option>2 guests</option>
-                <option>3 guests</option>
-                <option>4 guests</option>
+                <option>2 portions</option>
+                <option>4 portions</option>
+                <option>6 portions</option>
+              </select>
+            </label>
+            <label>
+              Fulfilment
+              <select>
+                <option>Pickup or delivery</option>
+                <option>Pickup only</option>
+                <option>Delivery only</option>
               </select>
             </label>
             <label>
@@ -165,64 +173,64 @@
           <div class="guest-layout">
             <div class="listing-grid" aria-label="Available host listings">
               <button class="listing-card active" type="button" data-listing="pakistani">
-                <img src="assets/dashboard/listing-pakistani.png" alt="Pakistani home dinner table" />
+                <img src="assets/dashboard/listing-pakistani.png" alt="Pakistani home-cooked meal spread" />
                 <span class="favorite" aria-label="Save listing">+</span>
                 <span class="badge">Top match</span>
                 <div>
                   <h4>Pakistani family dinner</h4>
                   <p>Chicken karahi, daal, rice, raita, salad, roti, chai.</p>
                   <dl>
-                    <div><dt>$42</dt><dd>per seat</dd></div>
+                    <div><dt>$42</dt><dd>for 2 portions</dd></div>
                     <div><dt>4.96</dt><dd>38 reviews</dd></div>
-                    <div><dt>4</dt><dd>seats left</dd></div>
+                    <div><dt>12</dt><dd>portions left</dd></div>
                   </dl>
                   <small>Verified host: Ayesha and family</small>
                 </div>
               </button>
 
               <button class="listing-card" type="button" data-listing="lebanese">
-                <img src="assets/dashboard/listing-lebanese.png" alt="Lebanese mezze home dining table" />
+                <img src="assets/dashboard/listing-lebanese.png" alt="Lebanese mezze home-cooked meal spread" />
                 <span class="favorite" aria-label="Save listing">+</span>
                 <span class="badge green">Low risk menu</span>
                 <div>
-                  <h4>Lebanese mezze table</h4>
+                  <h4>Lebanese mezze box</h4>
                   <p>Hummus, tabbouleh, grilled skewers, olives, bread, mint tea.</p>
                   <dl>
-                    <div><dt>$38</dt><dd>per seat</dd></div>
+                    <div><dt>$38</dt><dd>for 2 portions</dd></div>
                     <div><dt>4.91</dt><dd>52 reviews</dd></div>
-                    <div><dt>6</dt><dd>seats left</dd></div>
+                    <div><dt>18</dt><dd>portions left</dd></div>
                   </dl>
                   <small>Verified host: Samira</small>
                 </div>
               </button>
 
               <button class="listing-card" type="button" data-listing="thai">
-                <img src="assets/dashboard/listing-thai.png" alt="Thai home dinner table" />
+                <img src="assets/dashboard/listing-thai.png" alt="Thai home-cooked curry meal spread" />
                 <span class="favorite" aria-label="Save listing">+</span>
                 <span class="badge teal">Spice friendly</span>
                 <div>
                   <h4>Thai home curry night</h4>
                   <p>Green curry, noodles, herbs, grilled vegetables, coconut rice.</p>
                   <dl>
-                    <div><dt>$46</dt><dd>per seat</dd></div>
+                    <div><dt>$46</dt><dd>for 2 portions</dd></div>
                     <div><dt>4.88</dt><dd>29 reviews</dd></div>
-                    <div><dt>2</dt><dd>seats left</dd></div>
+                    <div><dt>8</dt><dd>portions left</dd></div>
                   </dl>
                   <small>Verified host: Mali</small>
                 </div>
               </button>
 
               <button class="listing-card" type="button" data-listing="italian">
-                <img src="assets/dashboard/listing-italian.png" alt="Italian pasta home dinner table" />
+                <img src="assets/dashboard/listing-italian.png" alt="Italian pasta home-cooked meal spread" />
                 <span class="favorite" aria-label="Save listing">+</span>
                 <span class="badge rose">Family friendly</span>
                 <div>
                   <h4>Italian pasta night</h4>
                   <p>Handmade pasta, tomato sugo, basil, salad, tiramisu.</p>
                   <dl>
-                    <div><dt>$44</dt><dd>per seat</dd></div>
+                    <div><dt>$44</dt><dd>for 2 portions</dd></div>
                     <div><dt>4.94</dt><dd>44 reviews</dd></div>
-                    <div><dt>5</dt><dd>seats left</dd></div>
+                    <div><dt>14</dt><dd>portions left</dd></div>
                   </dl>
                   <small>Verified host: Rosa</small>
                 </div>
@@ -242,14 +250,14 @@
 
                 <div class="trust-row" aria-label="Trust signals">
                   <span>Host verified</span>
-                  <span>Guest ID required</span>
-                  <span>Address after booking</span>
+                  <span>Customer verified</span>
+                  <span>Pickup or delivery</span>
                   <span id="detail-risk">Medium menu risk</span>
                 </div>
 
                 <p id="detail-description">
-                  A small family-style table with chicken karahi, daal, rice, raita, salad, roti, and chai.
-                  Best for guests who want a warm, authentic home dinner with clear house rules.
+                  A small-batch family-style order with chicken karahi, daal, rice, raita, salad, roti, and chai.
+                  Best for customers who want a warm, authentic home-cooked meal without restaurant-style commercial cooking.
                 </p>
 
                 <div class="detail-columns">
@@ -263,12 +271,12 @@
                     </ul>
                   </div>
                   <div>
-                    <h4>Allergens and rules</h4>
+                    <h4>Allergens and fulfilment</h4>
                     <ul id="detail-rules">
                       <li>Dairy disclosed in raita and chai</li>
-                      <li>Guest arrival window: 6:45-7:00pm</li>
-                      <li>No alcohol served by host</li>
-                      <li>Kitchen and private rooms off limits</li>
+                      <li>Pickup window: 6:30-7:00pm</li>
+                      <li>Delivery available within 8km</li>
+                      <li>Sealed packaging and reheating notes included</li>
                     </ul>
                   </div>
                 </div>
@@ -281,37 +289,38 @@
                   </div>
                 </div>
 
-                <div class="review-stack" aria-label="Recent guest reviews">
+                <div class="review-stack" aria-label="Recent customer reviews">
                   <blockquote id="detail-review">
-                    "The food tasted like a real family recipe, and the house rules made the whole thing feel calm."
+                    "The food tasted like a real family recipe, and the pickup instructions were simple and calm."
                   </blockquote>
-                  <span>Recent review from a verified guest</span>
+                  <span>Recent review from a verified customer</span>
                 </div>
 
-                <form class="checkout-card" aria-label="Book selected meal">
+                <form class="checkout-card" aria-label="Order selected meal">
                   <div>
                     <label>
-                      Date
+                      Fulfilment window
                       <select id="booking-date">
-                        <option>Sat 27 Jun, 7:00pm</option>
-                        <option>Fri 3 Jul, 7:00pm</option>
+                        <option>Sat 27 Jun, pickup 6:30-7:00pm</option>
+                        <option>Sat 27 Jun, delivery 6:30-7:30pm</option>
+                        <option>Fri 3 Jul, pickup 6:30-7:00pm</option>
                       </select>
                     </label>
                     <label>
-                      Seats
+                      Portions
                       <select id="booking-seats">
-                        <option>2 seats</option>
-                        <option>3 seats</option>
-                        <option>4 seats</option>
+                        <option>2 portions</option>
+                        <option>4 portions</option>
+                        <option>6 portions</option>
                       </select>
                     </label>
                   </div>
                   <div class="checkout-total">
-                    <span id="detail-price">$42 per seat</span>
+                    <span id="detail-price">$42 for 2 portions</span>
                     <strong id="detail-total">$84 total</strong>
                   </div>
-                  <button type="button">Reserve prepaid seats</button>
-                  <p>Exact address, host phone, and arrival notes unlock after payment and guest verification.</p>
+                  <button type="button">Place prepaid order</button>
+                  <p>Pickup address or delivery tracking unlocks after payment and customer verification.</p>
                 </form>
               </div>
             </aside>
@@ -321,30 +330,30 @@
         <section class="section-block guest-aftercare" aria-labelledby="aftercare-title">
           <div class="section-heading">
             <div>
-              <p class="app-kicker">Guest account</p>
-              <h3 id="aftercare-title">Everything a guest needs after signup and after booking.</h3>
+              <p class="app-kicker">Customer account</p>
+              <h3 id="aftercare-title">Everything a customer needs after signup and after ordering.</h3>
             </div>
           </div>
           <div class="aftercare-grid">
             <article>
               <span>Upcoming</span>
               <h4>Pakistani family dinner</h4>
-              <p>Sat 27 Jun, 7:00pm. Address locked until ID check and payment are complete.</p>
+              <p>Sat 27 Jun, pickup 6:30-7:00pm. Pickup address locked until verification and payment are complete.</p>
             </article>
             <article>
               <span>Saved</span>
-              <h4>7 tables saved</h4>
-              <p>Guests can save hosts, cuisines, suburbs, and dietary-safe menus.</p>
+              <h4>7 kitchens saved</h4>
+              <p>Customers can save hosts, cuisines, suburbs, fulfilment options, and dietary-safe menus.</p>
             </article>
             <article>
               <span>Reviews</span>
               <h4>2 reviews pending</h4>
-              <p>Post-meal prompts capture food, safety, host warmth, accuracy, and house boundaries.</p>
+              <p>Post-meal prompts capture food, safety, accuracy, packaging, pickup, and delivery experience.</p>
             </article>
             <article>
               <span>Safety</span>
               <h4>Report centre</h4>
-              <p>Guests can report allergy issues, misconduct, injury, property concerns, or inaccurate listings.</p>
+              <p>Customers can report allergy issues, delivery problems, packaging concerns, or inaccurate listings.</p>
             </article>
           </div>
         </section>
@@ -354,16 +363,16 @@
         <div class="workspace-hero compact">
           <div>
             <p class="app-kicker">Host dashboard</p>
-            <h2 id="host-title">Turn a home kitchen into a controlled, compliant supper table.</h2>
+            <h2 id="host-title">Turn a home kitchen into a controlled, compliant meal kitchen.</h2>
             <p>
-              Hosts see what to complete, what council pathway is pending, what bookings are coming, and what they
-              can safely sell before a listing goes live.
+              Hosts see what to complete, what council pathway is pending, what orders are coming, and what they
+              can safely sell for pickup or delivery before a listing goes live.
             </p>
           </div>
           <div class="status-card">
             <span>Application status</span>
             <strong>In vetting</strong>
-            <p>Host cannot accept bookings until the platform review is complete.</p>
+            <p>Host cannot accept orders until the platform review is complete.</p>
           </div>
         </div>
 
@@ -393,8 +402,8 @@
             </article>
             <article class="check-card current">
               <span>In review</span>
-              <h4>Kitchen and dining uploads</h4>
-              <p>Prep area, fridge, sink, storage, dining table, bathroom access, off-limit areas.</p>
+              <h4>Kitchen and fulfilment uploads</h4>
+              <p>Prep area, fridge, sink, storage, packaging setup, pickup handoff point, and delivery process.</p>
             </article>
             <article class="check-card">
               <span>Required</span>
@@ -403,13 +412,13 @@
             </article>
             <article class="check-card">
               <span>Required</span>
-              <h4>Menu, pricing, timings</h4>
-              <p>Set menu, allergens, risk tier, price per seat, seats, dates, prep window, service time.</p>
+              <h4>Menu, pricing, fulfilment</h4>
+              <p>Set menu, allergens, risk tier, price per portion, batch size, pickup window, delivery radius.</p>
             </article>
             <article class="check-card">
               <span>Required</span>
               <h4>Platform insurance</h4>
-              <p>Platform-supplied insurance pathway, coverage acknowledgement, exclusions, incident rules.</p>
+              <p>Platform-supplied insurance pathway, coverage acknowledgement, exclusions, pickup/delivery incident rules.</p>
             </article>
             <article class="check-card">
               <span>Locked</span>
@@ -425,11 +434,11 @@
             <p>Everything the platform needs before deciding whether a host can become eligible.</p>
             <div class="form-preview">
               <label>Legal host name<input value="Ayesha Khan" /></label>
-              <label>Home address<input value="Hidden until booking" /></label>
+              <label>Home kitchen address<input value="Hidden until confirmed pickup order" /></label>
               <label>Local council / LGA<input value="Ballina Shire Council" /></label>
               <label>Property type<select><option>Owner occupied house</option><option>Rental property</option><option>Apartment / strata</option></select></label>
-              <label>Maximum guests<select><option>4 guests</option><option>6 guests</option></select></label>
-              <label>Household disclosures<textarea>Pets: no. Children at home: yes. Guest areas: dining room and bathroom only.</textarea></label>
+              <label>Maximum batch size<select><option>12 portions</option><option>24 portions</option></select></label>
+              <label>Fulfilment disclosures<textarea>Pets: no. Children at home: yes. Pickup handoff: front gate only. Delivery radius: 8km.</textarea></label>
             </div>
           </article>
           <article class="panel">
@@ -438,7 +447,7 @@
             <div class="upload-list">
               <div><strong>Government ID</strong><span class="status-pill complete">Uploaded</span></div>
               <div><strong>Kitchen photos</strong><span class="status-pill complete">Uploaded</span></div>
-              <div><strong>Dining area photos</strong><span class="status-pill complete">Uploaded</span></div>
+              <div><strong>Packaging and pickup photos</strong><span class="status-pill complete">Uploaded</span></div>
               <div><strong>Council pathway form</strong><span class="status-pill current">In progress</span></div>
               <div><strong>Food safety certificate/module</strong><span class="status-pill">Required</span></div>
               <div><strong>Menu and allergen sheet</strong><span class="status-pill">Required</span></div>
@@ -455,18 +464,19 @@
               <label>Cuisine<input value="Pakistani" /></label>
               <label>Set menu<textarea>Chicken karahi, daal, rice, raita, salad, roti, chai.</textarea></label>
               <label>Allergens<textarea>Dairy in raita and chai. Gluten in roti. Spice level medium.</textarea></label>
-              <label>Price per seat<input value="$42" /></label>
-              <label>Available timing<input value="Fridays and Saturdays, 7:00pm, 4 seats" /></label>
+              <label>Price per order<input value="$42 for 2 portions" /></label>
+              <label>Pickup window<input value="Fridays and Saturdays, pickup 6:30-7:00pm" /></label>
+              <label>Delivery option<input value="Delivery within 8km, 6:30-7:30pm" /></label>
             </div>
           </article>
           <article class="panel">
             <h3>Insurance and platform review</h3>
-            <p>Insurance is supplied through the platform pathway for eligible hosts and eligible bookings.</p>
+            <p>Insurance is supplied through the platform pathway for eligible hosts and eligible pickup/delivery orders.</p>
             <table class="data-table">
               <thead><tr><th>Item</th><th>Status</th><th>Reviewer note</th></tr></thead>
               <tbody>
                 <tr><td>Platform insurance acknowledgement</td><td>Pending</td><td>Host must accept coverage rules.</td></tr>
-                <tr><td>Incident policy</td><td>Pending</td><td>Guest injury, allergy, misconduct, damage.</td></tr>
+                <tr><td>Incident policy</td><td>Pending</td><td>Allergy, delivery failure, packaging issue, refund dispute.</td></tr>
                 <tr><td>Menu risk review</td><td>Medium</td><td>Temperature guidance required.</td></tr>
                 <tr><td>Final host eligibility</td><td>Locked</td><td>Admin review after packet complete.</td></tr>
               </tbody>
@@ -546,8 +556,8 @@
           <article class="panel">
             <h3>Incident monitor</h3>
             <ul class="plain-list">
-              <li>Allergy concern: awaiting guest follow-up</li>
-              <li>Late arrival dispute: resolved with warning</li>
+              <li>Allergy concern: awaiting customer follow-up</li>
+              <li>Late pickup dispute: resolved with warning</li>
               <li>Listing photo mismatch: host update required</li>
             </ul>
           </article>

@@ -1,22 +1,22 @@
 const paths = {
   guest: {
-    kicker: "Guest app",
-    title: "Find a table that feels personal, verified, and delicious.",
+    kicker: "Customer app",
+    title: "Find a home kitchen that feels personal, verified, and delicious.",
     steps: [
-      "Browse verified listings by cuisine, date, price, dietary needs, and suburb.",
-      "Open a meal page with photos, host story, set menu, allergens, seats, and house rules.",
-      "Book prepaid seats, complete guest verification, and receive the exact address after confirmation.",
-      "Arrive for a small on-premise meal, then review the host and dining experience.",
+      "Browse verified home kitchens by cuisine, pickup window, delivery radius, price, dietary needs, and suburb.",
+      "Open a meal page with photos, host story, set menu, allergens, portions, packaging, and fulfilment options.",
+      "Place a prepaid pickup or delivery order, complete account verification, and receive order updates after confirmation.",
+      "Collect or receive a home-cooked meal, then review the host, food accuracy, packaging, and fulfilment experience.",
     ],
   },
   host: {
     kicker: "Host studio",
     title: "Turn a home kitchen into a controlled income stream.",
     steps: [
-      "Create a host profile with identity, location, cooking background, and table capacity.",
-      "Complete guided safety modules, kitchen photos, allergen prompts, and household boundaries.",
-      "Submit fixed menus, dates, prices, seats, and local compliance checklist confirmations.",
-      "Go live only after review, then manage bookings, payouts, reviews, and incidents.",
+      "Create a host profile with identity, location, cooking background, and batch capacity.",
+      "Complete guided safety modules, kitchen photos, allergen prompts, packaging setup, pickup windows, and delivery radius.",
+      "Submit fixed menus, dates, prices, portions, fulfilment options, and local compliance checklist confirmations.",
+      "Go live only after review, then manage orders, payouts, reviews, and incidents.",
     ],
   },
   admin: {
@@ -25,7 +25,7 @@ const paths = {
     steps: [
       "Review host applications, kitchen evidence, training state, menu risk, and insurance status.",
       "Mark hosts eligible, pause listings, reject applications, or request more information before anything is visible.",
-      "Track incidents, guest reports, repeat complaints, menu changes, and audit history.",
+      "Track incidents, customer reports, repeat complaints, menu changes, and audit history.",
       "Export compliance summaries for pilot reviews, insurance conversations, or council meetings.",
     ],
   },

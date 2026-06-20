@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
   <title id="title">SupperTable logo</title>
-  <desc id="desc">SupperTable horizontal logo with a warm S monogram and verified home dining tagline.</desc>
+  <desc id="desc">SupperTable horizontal logo with a warm S monogram and verified home meals tagline.</desc>
   <defs>
     <linearGradient id="markBg" x1="130" y1="104" x2="542" y2="560" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff0d2"/>
@@ -50,6 +50,6 @@
       font-size="28"
       font-weight="760"
       letter-spacing="4"
-      fill="#5d5047">VERIFIED HOME DINING</text>
+      fill="#5d5047">VERIFIED HOME MEALS</text>
   </g>
 </svg>
