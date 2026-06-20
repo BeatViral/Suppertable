@@ -361,48 +361,114 @@
             </p>
           </div>
           <div class="status-card">
-            <span>Host status</span>
-            <strong>Needs final review</strong>
-            <p>6 of 8 onboarding steps complete</p>
+            <span>Application status</span>
+            <strong>In vetting</strong>
+            <p>Host cannot accept bookings until the platform review is complete.</p>
           </div>
         </div>
 
         <section class="section-block" id="host-onboarding" aria-labelledby="host-onboarding-title">
           <div class="section-heading">
             <div>
-              <p class="app-kicker">Go-live pathway</p>
-              <h3 id="host-onboarding-title">Host onboarding that feels guided, not bureaucratic.</h3>
+              <p class="app-kicker">Host backend</p>
+              <h3 id="host-onboarding-title">A step-by-step vetting checklist before any host goes live.</h3>
             </div>
-            <button class="quiet-button" type="button">Upload kitchen photos</button>
+            <button class="quiet-button" type="button">Resume application</button>
           </div>
-          <div class="host-grid">
-            <article class="check-card complete"><h4>Identity</h4><p>Government ID, phone, email, profile photo.</p></article>
-            <article class="check-card complete"><h4>Kitchen evidence</h4><p>Prep area, sink, fridge, storage, dining space.</p></article>
-            <article class="check-card complete"><h4>Food safety module</h4><p>Hygiene, storage, allergens, cleaning, illness rules.</p></article>
-            <article class="check-card current"><h4>Menu risk</h4><p>Chicken, rice, dairy dessert flagged for temperature guidance.</p></article>
-            <article class="check-card"><h4>Local pathway</h4><p>Notification, permit, application, approval, or inspection checklist.</p></article>
-            <article class="check-card"><h4>Insurance</h4><p>Coverage status, host acknowledgements, exclusions, incident rules.</p></article>
+          <div class="application-flow">
+            <article class="check-card complete">
+              <span>Complete</span>
+              <h4>Account and identity</h4>
+              <p>Legal name, phone, email, government ID, profile photo, and emergency contact.</p>
+            </article>
+            <article class="check-card complete">
+              <span>Complete</span>
+              <h4>Host profile</h4>
+              <p>Cooking background, languages, suburb, hosting intent, family/household disclosure.</p>
+            </article>
+            <article class="check-card current">
+              <span>In review</span>
+              <h4>Platform council form</h4>
+              <p>Host fills the SupperTable form for LGA, home food activity, menu type, and local pathway.</p>
+            </article>
+            <article class="check-card current">
+              <span>In review</span>
+              <h4>Kitchen and dining uploads</h4>
+              <p>Prep area, fridge, sink, storage, dining table, bathroom access, off-limit areas.</p>
+            </article>
+            <article class="check-card">
+              <span>Required</span>
+              <h4>Food safety module</h4>
+              <p>Hygiene, illness rules, cleaning, temperature guidance, allergens, cross-contamination.</p>
+            </article>
+            <article class="check-card">
+              <span>Required</span>
+              <h4>Menu, pricing, timings</h4>
+              <p>Set menu, allergens, risk tier, price per seat, seats, dates, prep window, service time.</p>
+            </article>
+            <article class="check-card">
+              <span>Required</span>
+              <h4>Platform insurance</h4>
+              <p>Platform-supplied insurance pathway, coverage acknowledgement, exclusions, incident rules.</p>
+            </article>
+            <article class="check-card">
+              <span>Locked</span>
+              <h4>Final eligibility review</h4>
+              <p>Admin checks the full application packet before the host can publish a listing.</p>
+            </article>
           </div>
         </section>
 
-        <section class="section-block two-col">
+        <section class="section-block two-col host-application">
           <article class="panel">
-            <h3>Listing builder</h3>
+            <h3>Platform-supplied host form</h3>
+            <p>Everything the platform needs before deciding whether a host can become eligible.</p>
             <div class="form-preview">
-              <label>Meal title<input value="Pakistani family dinner" /></label>
-              <label>Seats<select><option>4 seats</option><option>6 seats</option></select></label>
-              <label>Price per seat<input value="$42" /></label>
-              <label>Menu summary<textarea>Chicken karahi, daal, rice, raita, salad, roti, chai.</textarea></label>
+              <label>Legal host name<input value="Ayesha Khan" /></label>
+              <label>Home address<input value="Hidden until booking" /></label>
+              <label>Local council / LGA<input value="Ballina Shire Council" /></label>
+              <label>Property type<select><option>Owner occupied house</option><option>Rental property</option><option>Apartment / strata</option></select></label>
+              <label>Maximum guests<select><option>4 guests</option><option>6 guests</option></select></label>
+              <label>Household disclosures<textarea>Pets: no. Children at home: yes. Guest areas: dining room and bathroom only.</textarea></label>
             </div>
           </article>
           <article class="panel">
-            <h3>Bookings and payouts</h3>
+            <h3>Required uploads</h3>
+            <p>Hosts cannot submit for review until the application packet is complete.</p>
+            <div class="upload-list">
+              <div><strong>Government ID</strong><span class="status-pill complete">Uploaded</span></div>
+              <div><strong>Kitchen photos</strong><span class="status-pill complete">Uploaded</span></div>
+              <div><strong>Dining area photos</strong><span class="status-pill complete">Uploaded</span></div>
+              <div><strong>Council pathway form</strong><span class="status-pill current">In progress</span></div>
+              <div><strong>Food safety certificate/module</strong><span class="status-pill">Required</span></div>
+              <div><strong>Menu and allergen sheet</strong><span class="status-pill">Required</span></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section-block two-col host-application">
+          <article class="panel">
+            <h3>Menu, pricing, and timing form</h3>
+            <p>The host submits one controlled offer first. No custom chaos, no open-ended restaurant menu.</p>
+            <div class="form-preview">
+              <label>Meal title<input value="Pakistani family dinner" /></label>
+              <label>Cuisine<input value="Pakistani" /></label>
+              <label>Set menu<textarea>Chicken karahi, daal, rice, raita, salad, roti, chai.</textarea></label>
+              <label>Allergens<textarea>Dairy in raita and chai. Gluten in roti. Spice level medium.</textarea></label>
+              <label>Price per seat<input value="$42" /></label>
+              <label>Available timing<input value="Fridays and Saturdays, 7:00pm, 4 seats" /></label>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Insurance and platform review</h3>
+            <p>Insurance is supplied through the platform pathway for eligible hosts and eligible bookings.</p>
             <table class="data-table">
-              <thead><tr><th>Date</th><th>Guests</th><th>Status</th><th>Payout</th></tr></thead>
+              <thead><tr><th>Item</th><th>Status</th><th>Reviewer note</th></tr></thead>
               <tbody>
-                <tr><td>27 Jun</td><td>2</td><td>Verified</td><td>$71.40</td></tr>
-                <tr><td>3 Jul</td><td>4</td><td>Pending ID</td><td>$142.80</td></tr>
-                <tr><td>10 Jul</td><td>2</td><td>Waitlist</td><td>-</td></tr>
+                <tr><td>Platform insurance acknowledgement</td><td>Pending</td><td>Host must accept coverage rules.</td></tr>
+                <tr><td>Incident policy</td><td>Pending</td><td>Guest injury, allergy, misconduct, damage.</td></tr>
+                <tr><td>Menu risk review</td><td>Medium</td><td>Temperature guidance required.</td></tr>
+                <tr><td>Final host eligibility</td><td>Locked</td><td>Admin review after packet complete.</td></tr>
               </tbody>
             </table>
           </article>

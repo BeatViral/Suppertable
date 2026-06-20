@@ -8,6 +8,7 @@ This repository currently contains a self-contained landing page prototype for t
 
 - Premium landing page for SupperTable
 - Guest, host, and admin dashboard prototype
+- Host vetting backend with application packet, council pathway form, uploads, insurance, menu, pricing, and timings
 - Guest, host, and admin/compliance journey sections
 - Trust-led marketplace positioning
 - Trust, food safety, guest verification, and council-aware messaging

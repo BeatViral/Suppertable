@@ -366,6 +366,7 @@ a {
 .quick-grid,
 .aftercare-grid,
 .host-grid,
+.application-flow,
 .admin-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -380,6 +381,25 @@ a {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
+}
+
+.application-flow {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.check-card span,
+.status-pill {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 7px 9px;
+  border-radius: 8px;
+  color: var(--muted);
+  background: #f3eadf;
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .quick-grid span,
@@ -791,9 +811,21 @@ h4 {
   background: #ecfff5;
 }
 
+.check-card.complete span,
+.status-pill.complete {
+  color: #0b6a42;
+  background: #d9ffeb;
+}
+
 .check-card.current {
   border-color: rgba(255, 176, 0, 0.58);
   background: #fff4d6;
+}
+
+.check-card.current span,
+.status-pill.current {
+  color: #794900;
+  background: #ffe2a3;
 }
 
 .two-col,
@@ -815,6 +847,29 @@ h4 {
   display: grid;
   gap: 12px;
   margin-top: 16px;
+}
+
+.upload-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.upload-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  min-height: 52px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+}
+
+.upload-list .status-pill {
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .data-table {
@@ -933,6 +988,7 @@ h4 {
   .quick-grid,
   .aftercare-grid,
   .host-grid,
+  .application-flow,
   .listing-grid,
   .filter-bar,
   .detail-columns,
