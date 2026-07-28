@@ -216,11 +216,20 @@ input {
   backdrop-filter: blur(12px);
 }
 
+.hero-host-note {
+  width: min(720px, 100%);
+  margin: 20px 0 0;
+  color: #ffe2a9;
+  font-size: 1rem;
+  font-weight: 850;
+  line-height: 1.55;
+}
+
 .hero-facts {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 34px 0 0;
+  margin: 24px 0 0;
 }
 
 .hero-facts span,

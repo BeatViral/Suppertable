@@ -7,7 +7,7 @@ const listings = {
     risk: "Medium menu risk",
     price: 42,
     host: "Ayesha and family",
-    hostNote: "Verified host. Food safety module complete. Local pathway in review.",
+    hostNote: "Host reviewed before selling. Food safety module complete. Local pathway in review.",
     description:
       "A small-batch family-style order with chicken karahi, daal, rice, raita, salad, roti, and chai. Best for customers who want a warm, authentic home-cooked meal without restaurant-style commercial cooking.",
     menu: ["Chicken karahi", "Daal with tempered spices", "Basmati rice, roti, salad, raita", "Chai after dinner"],
@@ -22,7 +22,7 @@ const listings = {
     risk: "Low menu risk",
     price: 38,
     host: "Samira",
-    hostNote: "Verified host. Local pathway complete. Insurance status covered.",
+    hostNote: "Host reviewed before selling. Local pathway complete. Insurance status covered.",
     description:
       "A generous mezze box built for sharing: dips, herbs, grilled skewers, warm bread, olives, and mint tea packed for pickup or delivery.",
     menu: ["Hummus and baba ghanoush", "Tabbouleh and pickles", "Grilled chicken skewers", "Warm bread and mint tea"],
@@ -37,7 +37,7 @@ const listings = {
     risk: "Medium menu risk",
     price: 46,
     host: "Mali",
-    hostNote: "Verified host. Spice preferences supported before ordering.",
+    hostNote: "Host reviewed before selling. Spice preferences supported before ordering.",
     description:
       "A colourful Thai home-cooked order with curry, noodles, herbs, grilled vegetables, and rice. Customers choose mild, medium, or hot before confirmation.",
     menu: ["Green curry with coconut rice", "Fresh herb noodle salad", "Grilled vegetables", "Mango and coconut dessert"],
@@ -52,7 +52,7 @@ const listings = {
     risk: "Low menu risk",
     price: 44,
     host: "Rosa",
-    hostNote: "Verified host. Local pathway complete. Repeat customer favourite.",
+    hostNote: "Host reviewed before selling. Local pathway complete. Repeat customer favourite.",
     description:
       "A warm pasta order with handmade pasta, tomato sugo, basil, salad, and dessert. Best for couples, families, or travellers wanting a home-style meal.",
     menu: ["Handmade pasta with tomato sugo", "Seasonal salad", "Garlic bread", "Tiramisu"],
