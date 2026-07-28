@@ -1,17 +1,17 @@
 # SupperTable
 
-SupperTable is a compliance-first home-cooked pickup and delivery marketplace where verified home cooks offer small-batch cultural meals, with food safety, customer verification, and local council pathways built into the model.
+SupperTable helps home cooks turn their home kitchen into income by selling limited-batch cultural meals for local pickup or delivery after completing the right food safety and council registration pathway.
 
 This repository currently contains a self-contained landing page prototype for the SupperTable concept.
 
 ## What is included
 
-- Premium landing page for SupperTable
+- Simple, warm landing page for SupperTable
 - Customer, host, and admin dashboard prototype
 - Host vetting backend with application packet, council pathway form, uploads, insurance, menu, pricing, and timings
-- Customer, host, and admin/compliance journey sections
-- Trust-led marketplace positioning
-- Trust, food safety, customer verification, pickup/delivery fulfilment, and council-aware messaging
+- Customer ordering, host setup, and safety pathway sections
+- Plain-language marketplace positioning
+- Food safety, pickup/delivery fulfilment, and council-aware host messaging
 - Generated hero image stored locally in `assets/`
 - Complete logo, favicon, app-icon, and social-card package in `assets/brand/`
 - No build step or package install required

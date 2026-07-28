@@ -132,7 +132,7 @@ a {
   color: var(--saffron);
   font-size: 0.72rem;
   font-weight: 950;
-  letter-spacing: 0.09em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -398,7 +398,7 @@ a {
   background: #f3eadf;
   font-size: 0.72rem;
   font-weight: 950;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -484,7 +484,7 @@ h4 {
   font-size: 0.76rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0;
 }
 
 .filter-bar input,
@@ -783,7 +783,7 @@ h4 {
   color: var(--muted);
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0;
   font-size: 0.76rem;
 }
 

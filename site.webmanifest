@@ -1,7 +1,7 @@
 {
   "name": "SupperTable",
   "short_name": "SupperTable",
-  "description": "Verified home-cooked pickup and delivery for small-batch cultural meals.",
+  "description": "Home-cooked cultural meals from local family kitchens for pickup and local delivery.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fffdf8",

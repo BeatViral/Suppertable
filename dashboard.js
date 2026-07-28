@@ -56,7 +56,7 @@ const listings = {
     description:
       "A warm pasta order with handmade pasta, tomato sugo, basil, salad, and dessert. Best for couples, families, or travellers wanting a home-style meal.",
     menu: ["Handmade pasta with tomato sugo", "Seasonal salad", "Garlic bread", "Tiramisu"],
-    rules: ["Gluten, egg, and dairy disclosed", "Pickup or delivery available", "Pickup address released after payment", "Best eaten within 30 minutes"],
+    rules: ["Gluten, egg, and dairy disclosed", "Pickup or delivery available", "Pickup instructions sent after payment", "Best eaten within 30 minutes"],
     review: '"Rosa made us feel welcome without it feeling invasive. The pasta was simple, honest, and excellent."',
   },
 };
