@@ -6,7 +6,7 @@
     <title>SupperTable Dashboards | Customer, Host, Admin</title>
     <meta
       name="description"
-      content="SupperTable dashboard prototype for customers, hosts, and compliance admins."
+      content="SupperTable dashboard prototype for customers, hosts, and admin reviewers."
     />
     <meta name="theme-color" content="#17120f" />
     <link rel="icon" href="favicon.ico" sizes="any" />
@@ -44,7 +44,7 @@
       <div class="pilot-note">
         <span>Pilot mode</span>
         <strong>Northern Rivers</strong>
-        <p>10-20 vetted hosts, pickup and delivery only, no dine-in, no open-ended restaurant menu.</p>
+        <p>1-3 pilot hosts, pickup first, local delivery second, no dine-in, no open-ended restaurant menu.</p>
       </div>
     </aside>
 
@@ -69,7 +69,7 @@
             <p class="app-kicker">Customer experience</p>
             <h2 id="guest-title">Find verified home-cooked meals for pickup or delivery.</h2>
             <p>
-              Customers land in a warm but controlled marketplace: identity setup, dietary profile, verified kitchens,
+              Customers land in a warm but careful ordering space: identity setup, dietary profile, verified kitchens,
               host reviews, pickup windows, delivery options, packaging notes, and an order flow that feels calmer than a restaurant app.
             </p>
           </div>
@@ -92,7 +92,7 @@
           <div class="section-heading">
             <div>
               <p class="app-kicker">Upon signup</p>
-              <h3 id="signup-title">Customer chooses fulfilment, trust setup, and food preferences.</h3>
+              <h3 id="signup-title">Customer chooses fulfilment, account setup, and food preferences.</h3>
             </div>
             <button class="quiet-button" type="button">Continue setup</button>
           </div>
@@ -308,7 +308,7 @@
                     </label>
                     <label>
                       Portions
-                      <select id="booking-seats">
+                      <select id="booking-portions">
                         <option>2 portions</option>
                         <option>4 portions</option>
                         <option>6 portions</option>
@@ -488,7 +488,7 @@
       <section class="dashboard-view" id="admin-view" data-view-panel="admin" aria-labelledby="admin-title">
         <div class="workspace-hero compact">
           <div>
-            <p class="app-kicker">Admin and compliance</p>
+            <p class="app-kicker">Admin review</p>
             <h2 id="admin-title">The review record councils and insurers need to see.</h2>
             <p>
               Admins manage eligibility, listing visibility, risk, incidents, documents, and exportable audit history.
@@ -576,7 +576,7 @@
               <li>Pilot host count</li>
               <li>Incident summary</li>
               <li>Risk tier distribution</li>
-              <li>Monthly operating notes</li>
+              <li>Monthly pilot notes</li>
             </ul>
           </article>
         </section>

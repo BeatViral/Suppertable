@@ -10,7 +10,7 @@ This repository currently contains a self-contained landing page prototype for t
 - Customer, host, and admin dashboard prototype
 - Host vetting backend with application packet, council pathway form, uploads, insurance, menu, pricing, and timings
 - Customer ordering, host setup, and safety pathway sections
-- Plain-language marketplace positioning
+- Plain-language pickup and delivery positioning
 - Food safety, pickup/delivery fulfilment, and council-aware host messaging
 - Generated hero image stored locally in `assets/`
 - Complete logo, favicon, app-icon, and social-card package in `assets/brand/`
@@ -24,4 +24,4 @@ Open `dashboard.html` to explore the customer, host, and admin product workspace
 
 ## Project direction
 
-The next version can be migrated into a full app stack, likely Next.js, TypeScript, Tailwind, Firebase, Stripe Connect, and Vercel, once the marketplace MVP begins.
+The next version can be migrated into a full app stack once the pickup and delivery pilot begins.
