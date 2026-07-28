@@ -1,6 +1,6 @@
 # SupperTable
 
-SupperTable helps home cooks turn their home kitchen into income by selling limited-batch cultural meals for local pickup or delivery after completing the right food safety and council registration pathway.
+SupperTable helps home cooks turn their home kitchen into income by selling small-batch cultural meals for local pickup or delivery after completing the right food safety and council registration pathway.
 
 This repository currently contains a self-contained landing page prototype for the SupperTable concept.
 

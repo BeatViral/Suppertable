@@ -9,7 +9,7 @@ const listings = {
     host: "Ayesha and family",
     hostNote: "Host reviewed before selling. Food safety module complete. Local pathway in review.",
     description:
-      "A small-batch family-style order with chicken karahi, daal, rice, raita, salad, roti, and chai. Best for customers who want a warm, authentic home-cooked meal without restaurant-style commercial cooking.",
+      "A small-batch home-style order with chicken karahi, daal, rice, raita, salad, roti, and chai. Best for customers who want warm, authentic home-cooked food without restaurant-style commercial cooking.",
     menu: ["Chicken karahi", "Daal with tempered spices", "Basmati rice, roti, salad, raita", "Chai after dinner"],
     rules: ["Dairy disclosed in raita and chai", "Pickup window: 6:30-7:00pm", "Delivery available within 8km", "Sealed packaging and reheating notes included"],
     review: '"The food tasted like a real family recipe, and the pickup instructions were simple and calm."',
