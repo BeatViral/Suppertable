@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SupperTable Workspaces | Kitchens, Customers, Review</title>
+    <title>SupperTable Workspaces | Kitchen Brands, Customers, Review</title>
     <meta
       name="description"
-      content="SupperTable dashboard prototype for kitchen owners, customers, and admin reviewers."
+      content="SupperTable dashboard prototype for kitchen brands, customers, kitchen owners, and admin reviewers."
     />
     <meta name="theme-color" content="#17120f" />
     <link rel="icon" href="favicon.ico" sizes="any" />
@@ -35,16 +35,16 @@
       </div>
 
       <nav class="side-nav" aria-label="Workspace shortcuts">
-        <a href="#guest-discover">Discover kitchens</a>
-        <a href="#guest-booking">Kitchen detail</a>
-        <a href="#kitchen-setup">Kitchen setup</a>
+        <a href="#guest-discover">Discover brands</a>
+        <a href="#guest-booking">Brand detail</a>
+        <a href="#kitchen-setup">Brand setup</a>
         <a href="#admin-queue">Review queue</a>
       </nav>
 
       <div class="pilot-note">
         <span>Pilot mode</span>
         <strong>Northern Rivers</strong>
-        <p>1-3 pilot kitchens, pickup first, local delivery second, no dine-in, no open-ended restaurant menu.</p>
+        <p>1-3 pilot kitchen brands, pickup first, local delivery second, no dine-in, no open-ended restaurant menu.</p>
       </div>
     </aside>
 
@@ -67,9 +67,9 @@
         <div class="workspace-hero">
           <div>
             <p class="app-kicker">Customer experience</p>
-            <h2 id="guest-title">Discover new local kitchens for pickup or delivery.</h2>
+            <h2 id="guest-title">Discover independent kitchen brands for pickup or delivery.</h2>
             <p>
-              Customers land in a warm but careful discovery space: kitchen brands, cuisine, location, story,
+              Customers land in a warm but careful discovery space: brand name, cuisine, location, story,
               menus, reviews, pickup windows, delivery options, packaging notes, and a calm order flow.
             </p>
           </div>
@@ -99,8 +99,8 @@
           <div class="quick-grid">
             <article>
               <span>1</span>
-              <h4>I want meals</h4>
-              <p>Browse reviewed kitchen storefronts, save favourites, and place prepaid pickup or delivery orders.</p>
+              <h4>I want to order</h4>
+              <p>Browse reviewed kitchen brand storefronts, save favourites, and place prepaid pickup or delivery orders.</p>
             </article>
             <article>
               <span>2</span>
@@ -124,7 +124,7 @@
           <div class="section-heading">
             <div>
               <p class="app-kicker">Discover</p>
-              <h3 id="discover-title">New kitchens near you</h3>
+              <h3 id="discover-title">New kitchen brands near you</h3>
             </div>
             <div class="view-controls" role="group" aria-label="Kitchen view">
               <button class="active" type="button">Grid</button>
@@ -132,7 +132,7 @@
             </div>
           </div>
 
-          <form class="filter-bar" aria-label="Meal search filters">
+          <form class="filter-bar" aria-label="Kitchen brand search filters">
             <label>
               Location
               <input type="search" value="Cumbalum + 25km" />
@@ -171,7 +171,7 @@
           </form>
 
           <div class="guest-layout">
-            <div class="kitchen-result-grid" aria-label="Available kitchen storefronts">
+            <div class="kitchen-result-grid" aria-label="Available kitchen brand storefronts">
               <button class="kitchen-result-card active" type="button" data-kitchen="pakistani">
                 <img src="assets/dashboard/listing-pakistani.png" alt="Pakistani local kitchen meal spread" />
                 <span class="favorite" aria-label="Save kitchen">+</span>
@@ -184,7 +184,7 @@
                     <div><dt>4.96</dt><dd>38 reviews</dd></div>
                     <div><dt>12</dt><dd>portions left</dd></div>
                   </dl>
-                  <small>Kitchen reviewed before opening: Ayesha Matloob</small>
+                  <small>Kitchen brand reviewed before opening: Ayesha Matloob</small>
                 </div>
               </button>
 
@@ -200,7 +200,7 @@
                     <div><dt>4.91</dt><dd>52 reviews</dd></div>
                     <div><dt>18</dt><dd>portions left</dd></div>
                   </dl>
-                  <small>Kitchen reviewed before opening: Samira Haddad</small>
+                  <small>Kitchen brand reviewed before opening: Samira Haddad</small>
                 </div>
               </button>
 
@@ -216,7 +216,7 @@
                     <div><dt>4.88</dt><dd>29 reviews</dd></div>
                     <div><dt>8</dt><dd>portions left</dd></div>
                   </dl>
-                  <small>Kitchen reviewed before opening: Nok Mali</small>
+                  <small>Kitchen brand reviewed before opening: Nok Mali</small>
                 </div>
               </button>
 
@@ -232,13 +232,13 @@
                     <div><dt>4.94</dt><dd>44 reviews</dd></div>
                     <div><dt>14</dt><dd>portions left</dd></div>
                   </dl>
-                  <small>Kitchen reviewed before opening: Rosa Romano</small>
+                  <small>Kitchen brand reviewed before opening: Rosa Romano</small>
                 </div>
               </button>
             </div>
 
-            <aside class="booking-detail" id="guest-booking" aria-label="Selected kitchen detail">
-              <img class="detail-photo" id="detail-photo" src="assets/dashboard/listing-pakistani.png" alt="Selected kitchen" />
+            <aside class="booking-detail" id="guest-booking" aria-label="Selected kitchen brand detail">
+              <img class="detail-photo" id="detail-photo" src="assets/dashboard/listing-pakistani.png" alt="Selected kitchen brand" />
               <div class="detail-content">
                 <div class="detail-head">
                   <div>
@@ -249,14 +249,14 @@
                 </div>
 
                 <div class="trust-row" aria-label="Trust signals">
-                  <span>Kitchen reviewed</span>
+                  <span>Kitchen brand reviewed</span>
                   <span>Customer account checked</span>
                   <span>Pickup or delivery</span>
                   <span id="detail-risk">Medium menu risk</span>
                 </div>
 
                 <p id="detail-description">
-                  A branded local kitchen serving Pakistani cooking in small batches. Customers can order
+                  A branded local kitchen serving Pakistani cooking in small batches. Customers can follow the brand and order
                   the current menu ahead for pickup or local delivery where offered.
                 </p>
 
@@ -285,7 +285,7 @@
                   <div class="avatar">AK</div>
                   <div>
                     <strong id="detail-owner">Ayesha Matloob</strong>
-                    <span id="detail-owner-note">Kitchen reviewed before opening. Food safety module complete. Local pathway in review.</span>
+                    <span id="detail-owner-note">Kitchen brand reviewed before opening. Food safety module complete. Local pathway in review.</span>
                   </div>
                 </div>
 
@@ -319,7 +319,7 @@
                     <span id="detail-price">$42 for 2 portions</span>
                     <strong id="detail-total">$42 total</strong>
                   </div>
-                  <button type="button">Order from this kitchen</button>
+                  <button type="button">Order from this kitchen brand</button>
                   <p>Pickup details or delivery tracking unlock after payment and customer account checks.</p>
                 </form>
               </div>
@@ -338,17 +338,17 @@
             <article>
               <span>Upcoming</span>
               <h4>Matloob Kitchen</h4>
-              <p>Sat 27 Jun, pickup 6:30-7:00pm. Pickup details stay locked until checks and payment are complete.</p>
+              <p>Sat 22 Aug, pickup 6:30-7:00pm. Pickup details stay locked until checks and payment are complete.</p>
             </article>
             <article>
               <span>Saved</span>
-              <h4>7 kitchens saved</h4>
-              <p>Customers can save kitchens, cuisines, suburbs, fulfilment options, and dietary-safe menus.</p>
+              <h4>7 kitchen brands saved</h4>
+              <p>Customers can save kitchen brands, cuisines, suburbs, fulfilment options, and dietary-safe menus.</p>
             </article>
             <article>
               <span>Reviews</span>
               <h4>2 reviews pending</h4>
-              <p>Post-meal prompts capture food, safety, accuracy, packaging, pickup, and delivery experience.</p>
+              <p>Post-order prompts capture food, safety, accuracy, packaging, pickup, and delivery experience.</p>
             </article>
             <article>
               <span>Safety</span>
@@ -363,16 +363,16 @@
         <div class="workspace-hero compact">
           <div>
             <p class="app-kicker">Kitchen owner dashboard</p>
-            <h2 id="owner-title">Launch a branded local kitchen.</h2>
+            <h2 id="owner-title">Launch your independent kitchen brand.</h2>
             <p>
-              Kitchen owners see what to complete, what council pathway is pending, what orders are coming,
-              and what can safely be sold for pickup or delivery before the kitchen opens.
+              Kitchen owners see what to complete, what council pathway is pending, what products are ready,
+              and what can safely be sold for pickup or delivery before the kitchen brand opens.
             </p>
           </div>
           <div class="status-card">
             <span>Kitchen status</span>
             <strong>In setup</strong>
-            <p>Kitchen cannot accept orders until the platform review is complete.</p>
+            <p>Kitchen brand cannot accept orders until the platform review is complete.</p>
           </div>
         </div>
 
@@ -380,7 +380,7 @@
           <div class="section-heading">
             <div>
               <p class="app-kicker">Kitchen setup</p>
-              <h3 id="kitchen-setup-title">What your kitchen needs before opening.</h3>
+              <h3 id="kitchen-setup-title">What your kitchen brand needs before opening.</h3>
             </div>
             <button class="quiet-button" type="button">Resume application</button>
           </div>
@@ -392,8 +392,8 @@
             </article>
             <article class="check-card complete">
               <span>Complete</span>
-              <h4>Kitchen brand</h4>
-              <p>Kitchen name, cooking background, languages, suburb, story, and food style.</p>
+              <h4>Kitchen brand identity</h4>
+              <p>Kitchen brand name, cooking background, languages, suburb, story, and food style.</p>
             </article>
             <article class="check-card current">
               <span>In review</span>
@@ -413,7 +413,7 @@
             <article class="check-card">
               <span>Required</span>
               <h4>Menu, pricing, fulfilment</h4>
-              <p>Set menu, allergens, risk tier, price per portion, batch size, pickup window, delivery radius.</p>
+              <p>Set menu products, allergens, risk tier, price per portion, batch size, pickup window, delivery radius.</p>
             </article>
             <article class="check-card">
               <span>Required</span>
@@ -422,16 +422,16 @@
             </article>
             <article class="check-card">
               <span>Locked</span>
-              <h4>Final kitchen review</h4>
-              <p>Admin checks the full setup packet before the kitchen can publish a product.</p>
+              <h4>Final kitchen brand review</h4>
+              <p>Admin checks the full setup packet before the kitchen brand can publish a product.</p>
             </article>
           </div>
         </section>
 
         <section class="section-block two-col kitchen-application">
           <article class="panel">
-            <h3>Platform-supplied kitchen form</h3>
-            <p>Everything SupperTable needs before deciding whether a kitchen can become eligible.</p>
+            <h3>Platform-supplied kitchen brand form</h3>
+            <p>Everything SupperTable needs before deciding whether a kitchen brand can become eligible.</p>
             <div class="form-preview">
               <label>Legal owner name<input value="Ayesha Khan" /></label>
               <label>Kitchen trading name<input value="Matloob Kitchen" /></label>
@@ -458,8 +458,8 @@
 
         <section class="section-block two-col kitchen-application">
           <article class="panel">
-            <h3>Kitchen menu, pricing, and timing form</h3>
-            <p>The kitchen owner submits one controlled offer first. No custom chaos, no open-ended restaurant menu.</p>
+            <h3>Kitchen brand menu, pricing, and timing form</h3>
+            <p>The kitchen owner submits one controlled product offer first. No custom chaos, no open-ended restaurant menu.</p>
             <div class="form-preview">
               <label>Featured product<input value="Friday Karahi Dinner" /></label>
               <label>Cuisine<input value="Pakistani" /></label>
@@ -472,14 +472,14 @@
           </article>
           <article class="panel">
             <h3>Insurance and platform review</h3>
-            <p>Insurance is supplied through the platform pathway for eligible kitchen owners and eligible pickup/delivery orders.</p>
+            <p>Insurance is supplied through the platform pathway for eligible kitchen brands, kitchen owners and eligible pickup/delivery orders.</p>
             <table class="data-table">
               <thead><tr><th>Item</th><th>Status</th><th>Reviewer note</th></tr></thead>
               <tbody>
                 <tr><td>Platform insurance acknowledgement</td><td>Pending</td><td>Kitchen owner must accept coverage rules.</td></tr>
                 <tr><td>Incident policy</td><td>Pending</td><td>Allergy, delivery failure, packaging issue, refund dispute.</td></tr>
                 <tr><td>Menu risk review</td><td>Medium</td><td>Temperature guidance required.</td></tr>
-                <tr><td>Final kitchen eligibility</td><td>Locked</td><td>Admin review after packet complete.</td></tr>
+                <tr><td>Final kitchen brand eligibility</td><td>Locked</td><td>Admin review after packet complete.</td></tr>
               </tbody>
             </table>
           </article>
@@ -492,7 +492,7 @@
             <p class="app-kicker">Admin review</p>
             <h2 id="admin-title">The review record councils and insurers need to see.</h2>
             <p>
-              Admins manage kitchen eligibility, product visibility, risk, incidents, documents, and exportable audit history.
+              Admins manage kitchen brand eligibility, product visibility, risk, incidents, documents, and exportable audit history.
             </p>
           </div>
           <div class="status-card dark">
@@ -506,14 +506,14 @@
           <div class="section-heading">
             <div>
               <p class="app-kicker">Review queue</p>
-              <h3 id="queue-title">No kitchen or product goes public before the required checks are reviewed.</h3>
+              <h3 id="queue-title">No kitchen brand or product goes public before the required checks are reviewed.</h3>
             </div>
             <button class="quiet-button" type="button">Export audit log</button>
           </div>
           <table class="data-table admin-table">
             <thead>
               <tr>
-                <th>Kitchen</th>
+                <th>Kitchen brand</th>
                 <th>Menu risk</th>
                 <th>Local pathway</th>
                 <th>Insurance</th>
@@ -574,7 +574,7 @@
           <article class="panel">
             <h3>Council pack</h3>
             <ul class="plain-list">
-              <li>Pilot kitchen count</li>
+              <li>Pilot kitchen brand count</li>
               <li>Incident summary</li>
               <li>Risk tier distribution</li>
               <li>Monthly pilot notes</li>

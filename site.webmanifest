@@ -1,7 +1,7 @@
 {
   "name": "SupperTable",
   "short_name": "SupperTable",
-  "description": "Launch and discover branded local kitchens for pickup and local delivery.",
+  "description": "The home of branded local kitchens for pickup and local delivery.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fffdf8",

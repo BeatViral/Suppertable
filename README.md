@@ -1,6 +1,6 @@
 # SupperTable
 
-SupperTable helps talented cooks launch branded local kitchen businesses using the kitchen they already have, with setup, food safety and council steps, storefronts, ordering, pickup and local delivery.
+SupperTable is the home of branded local kitchens. It helps talented cooks launch independent kitchen brands using the kitchen they already have, with setup, food safety and council steps, storefronts, ordering, pickup and local delivery.
 
 This repository currently contains a self-contained landing page prototype for the SupperTable concept.
 

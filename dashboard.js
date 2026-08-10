@@ -7,9 +7,9 @@ const kitchens = {
     risk: "Medium menu risk",
     price: 42,
     owner: "Ayesha Matloob",
-    ownerNote: "Kitchen reviewed before opening. Food safety module complete. Local pathway in review.",
+    ownerNote: "Kitchen brand reviewed before opening. Food safety module complete. Local pathway in review.",
     description:
-      "A branded local kitchen serving Pakistani cooking in small batches. Customers can order the current menu ahead for pickup or local delivery where offered.",
+      "A branded local kitchen serving Pakistani cooking in small batches. Customers can follow the brand and order the current menu ahead for pickup or local delivery where offered.",
     menu: ["Friday Karahi Dinner", "Daal with tempered spices", "Basmati rice, roti, salad, raita", "Chai add-on"],
     rules: ["Dairy disclosed in raita and chai", "Pickup window: 6:30-7:00pm", "Delivery available within 8km", "Sealed packaging and reheating notes included"],
     review: '"Matloob Kitchen felt like a proper local food brand, and the pickup instructions were simple."',
@@ -22,7 +22,7 @@ const kitchens = {
     risk: "Low menu risk",
     price: 38,
     owner: "Samira Haddad",
-    ownerNote: "Kitchen reviewed before opening. Local pathway complete. Insurance status covered.",
+    ownerNote: "Kitchen brand reviewed before opening. Local pathway complete. Insurance status covered.",
     description:
       "A branded Lebanese kitchen with mezze boxes, kafta, dips, herbs, warm bread, olives, and mint tea packed for pickup or delivery.",
     menu: ["Lebanese Family Box", "Hummus and baba ghanoush", "Tabbouleh and pickles", "Warm bread and mint tea"],
@@ -37,7 +37,7 @@ const kitchens = {
     risk: "Medium menu risk",
     price: 46,
     owner: "Nok Mali",
-    ownerNote: "Kitchen reviewed before opening. Spice preferences supported before ordering.",
+    ownerNote: "Kitchen brand reviewed before opening. Spice preferences supported before ordering.",
     description:
       "A branded Thai kitchen with curry, noodles, herbs, grilled vegetables, and rice. Customers choose mild, medium, or hot before confirmation.",
     menu: ["Saturday Thai Kitchen", "Green curry with coconut rice", "Fresh herb noodle salad", "Mango and coconut dessert"],
@@ -52,7 +52,7 @@ const kitchens = {
     risk: "Low menu risk",
     price: 44,
     owner: "Rosa Romano",
-    ownerNote: "Kitchen reviewed before opening. Local pathway complete. Repeat customer favourite.",
+    ownerNote: "Kitchen brand reviewed before opening. Local pathway complete. Repeat customer favourite.",
     description:
       "A branded pasta kitchen with handmade pasta, tomato sugo, basil, salad, and dessert.",
     menu: ["Handmade pasta with tomato sugo", "Seasonal salad", "Garlic bread", "Tiramisu"],
@@ -63,7 +63,7 @@ const kitchens = {
 
 const titleMap = {
   guest: "Customer workspace",
-  owner: "Kitchen owner workspace",
+  owner: "Kitchen brand workspace",
   admin: "Admin review workspace",
 };
 
