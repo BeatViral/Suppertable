@@ -89,8 +89,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  font-size: 0.92rem;
+  gap: 16px;
+  font-size: 0.88rem;
   font-weight: 800;
 }
 
@@ -123,10 +123,10 @@ input {
 .hero {
   position: relative;
   display: grid;
-  min-height: 88vh;
+  min-height: 90vh;
   align-items: end;
   overflow: hidden;
-  padding: 136px max(24px, calc((100vw - 1180px) / 2)) 68px;
+  padding: 138px max(24px, calc((100vw - 1180px) / 2)) 70px;
   color: #fff;
   isolation: isolate;
 }
@@ -142,20 +142,20 @@ input {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(1.08) contrast(1.04);
+  filter: saturate(1.05) contrast(1.05);
 }
 
 .hero-scrim {
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(22, 19, 16, 0.9), rgba(22, 19, 16, 0.55) 56%, rgba(22, 19, 16, 0.2)),
-    linear-gradient(180deg, rgba(22, 19, 16, 0.18), rgba(22, 19, 16, 0.72));
+    linear-gradient(90deg, rgba(22, 19, 16, 0.9), rgba(22, 19, 16, 0.56) 55%, rgba(22, 19, 16, 0.18)),
+    linear-gradient(180deg, rgba(22, 19, 16, 0.16), rgba(22, 19, 16, 0.75));
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  width: min(820px, 100%);
+  width: min(880px, 100%);
 }
 
 .eyebrow,
@@ -170,14 +170,14 @@ input {
 
 .hero h1 {
   margin: 0;
-  max-width: 880px;
-  font-size: clamp(3.2rem, 7.3vw, 7rem);
+  max-width: 900px;
+  font-size: clamp(3.4rem, 7.6vw, 7.2rem);
   line-height: 0.94;
   letter-spacing: 0;
 }
 
 .hero-copy {
-  width: min(700px, 100%);
+  width: min(740px, 100%);
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(1.08rem, 1.8vw, 1.3rem);
@@ -216,32 +216,37 @@ input {
   backdrop-filter: blur(12px);
 }
 
-.hero-host-note {
+.hero-line {
   width: min(720px, 100%);
-  margin: 20px 0 0;
+  margin: 22px 0 0;
   color: #ffe2a9;
-  font-size: 1rem;
-  font-weight: 850;
-  line-height: 1.55;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  font-weight: 950;
+  line-height: 1.35;
 }
 
-.hero-facts {
+.hero-facts,
+.brand-ribbon {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.hero-facts {
   margin: 24px 0 0;
 }
 
 .hero-facts span,
+.brand-ribbon span,
 .tag,
-.pilot-strip span {
+.sample-tag {
   display: inline-flex;
   min-height: 34px;
   align-items: center;
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 850;
 }
 
@@ -251,31 +256,22 @@ input {
   backdrop-filter: blur(12px);
 }
 
-.hero-facts strong {
-  margin-right: 4px;
-  color: var(--gold);
-  font-size: 1.2rem;
-}
-
-.food-line {
-  padding: 24px max(24px, calc((100vw - 1180px) / 2));
+.brand-ribbon {
+  padding: 18px max(24px, calc((100vw - 1180px) / 2));
   color: #fff;
-  background: linear-gradient(90deg, var(--clay-dark), var(--clay) 45%, var(--olive));
+  background: linear-gradient(90deg, var(--clay-dark), var(--clay) 44%, var(--olive));
 }
 
-.food-line p {
-  max-width: 980px;
-  margin: 0;
-  font-size: clamp(1.35rem, 2.8vw, 2.5rem);
-  font-weight: 950;
-  line-height: 1.12;
+.brand-ribbon span {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .section,
 .pilot-strip {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 78px 0;
+  padding: 82px 0;
 }
 
 .section-copy {
@@ -291,14 +287,14 @@ input {
 .pilot-strip h2,
 .final-cta h2 {
   margin: 0;
-  font-size: clamp(2.1rem, 4.6vw, 4.5rem);
+  font-size: clamp(2.15rem, 4.7vw, 4.6rem);
   line-height: 1;
   letter-spacing: 0;
 }
 
 .section h3 {
   margin: 0;
-  font-size: 1.22rem;
+  font-size: 1.24rem;
   line-height: 1.18;
   letter-spacing: 0;
 }
@@ -312,83 +308,100 @@ input {
   line-height: 1.72;
 }
 
-.simple-grid,
-.host-section,
-.customer-section {
+.story-section,
+.owner-section,
+.discover-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1.15fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
   gap: 42px;
   align-items: start;
 }
 
-.card-grid {
+.transformation {
   display: grid;
   gap: 14px;
 }
 
-.card-grid.four {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.card-grid article,
-.step-list article,
-.customer-card,
+.quote-card,
+.owner-panel,
+.profile-preview,
 .rule-card,
-.meal-card,
-.host-panel {
+.kitchen-card,
+.pathway-card,
+.resource-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
   box-shadow: 0 14px 44px rgba(64, 38, 24, 0.08);
 }
 
-.card-grid article {
+.quote-card {
   display: grid;
-  gap: 12px;
-  min-height: 190px;
+  gap: 8px;
   padding: 24px;
 }
 
-.card-grid span,
-.step-list span {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border-radius: 8px;
-  color: #fff;
-  background: var(--clay);
+.quote-card span,
+.current-batch span {
+  color: var(--clay-dark);
+  font-size: 0.76rem;
   font-weight: 950;
+  text-transform: uppercase;
 }
 
-.card-grid article:nth-child(2) span,
-.step-list article:nth-child(2) span {
-  background: var(--olive);
+.quote-card strong {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1;
 }
 
-.card-grid article:nth-child(3) span,
-.step-list article:nth-child(3) span {
-  color: #241506;
-  background: var(--gold);
-}
-
-.card-grid article:nth-child(4) span,
-.step-list article:nth-child(4) span {
+.quote-card.dark {
+  color: #fff;
   background: var(--charcoal);
 }
 
-.host-panel {
+.quote-card.dark span {
+  color: var(--gold);
+}
+
+.transformation-chain {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.transformation-chain li {
+  position: relative;
+  min-height: 46px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 900;
+}
+
+.transformation-chain li:not(:last-child)::after {
+  content: "->";
+  position: absolute;
+  right: 18px;
+  color: var(--clay);
+}
+
+.owner-panel {
   position: sticky;
   top: 110px;
   display: grid;
   gap: 18px;
   padding: 32px;
   color: #fff;
-  background: var(--charcoal);
+  background:
+    linear-gradient(135deg, rgba(142, 66, 41, 0.94), rgba(31, 29, 26, 0.96)),
+    var(--charcoal);
 }
 
-.host-panel p {
-  color: rgba(255, 255, 255, 0.76);
+.owner-panel p {
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .step-list {
@@ -402,25 +415,177 @@ input {
   gap: 16px;
   align-items: start;
   padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 14px 44px rgba(64, 38, 24, 0.08);
 }
 
-.customer-card {
+.step-list span {
   display: grid;
-  gap: 18px;
-  padding: 34px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 8px;
   color: #fff;
+  background: var(--clay);
+  font-weight: 950;
+}
+
+.step-list article:nth-child(2) span,
+.step-list article:nth-child(5) span {
+  background: var(--olive);
+}
+
+.step-list article:nth-child(3) span,
+.step-list article:nth-child(6) span {
+  color: #241506;
+  background: var(--gold);
+}
+
+.step-list article:nth-child(4) span {
+  background: var(--charcoal);
+}
+
+.profile-preview {
+  overflow: hidden;
+}
+
+.profile-photo {
+  min-height: 230px;
   background:
-    linear-gradient(135deg, rgba(142, 66, 41, 0.96), rgba(102, 115, 75, 0.92)),
-    var(--clay-dark);
+    linear-gradient(180deg, rgba(31, 29, 26, 0.02), rgba(31, 29, 26, 0.32)),
+    url("assets/suppertable-hero.png") center / cover;
 }
 
-.customer-card strong {
-  font-size: clamp(2rem, 4vw, 3.8rem);
-  line-height: 0.98;
+.profile-body {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  padding: 24px;
 }
 
-.customer-card p {
-  color: rgba(255, 255, 255, 0.8);
+.profile-body dl {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.profile-body dl div {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.profile-body dt,
+.profile-body dd {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.profile-body dt {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.profile-body dd {
+  font-weight: 850;
+}
+
+.kitchen-logo,
+.kitchen-mark {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--clay);
+  font-weight: 950;
+}
+
+.tag,
+.sample-tag {
+  width: fit-content;
+  border-color: rgba(102, 115, 75, 0.22);
+  color: var(--olive);
+  background: var(--olive-soft);
+}
+
+.kitchens-section {
+  display: grid;
+  gap: 30px;
+}
+
+.kitchen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.kitchen-card {
+  overflow: hidden;
+  background: #fff;
+}
+
+.kitchen-image {
+  min-height: 210px;
+  background:
+    linear-gradient(180deg, rgba(31, 29, 26, 0.02), rgba(31, 29, 26, 0.32)),
+    url("assets/suppertable-hero.png") center / cover;
+}
+
+.kitchen-image.thai {
+  background-position: 58% 50%;
+  filter: hue-rotate(46deg) saturate(1.08);
+}
+
+.kitchen-image.lebanese {
+  background-position: 34% 50%;
+  filter: hue-rotate(332deg) saturate(1.04);
+}
+
+.kitchen-body {
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+}
+
+.kitchen-heading {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.kitchen-mark.green {
+  background: var(--olive);
+}
+
+.kitchen-mark.gold {
+  color: #241506;
+  background: var(--gold);
+}
+
+.current-batch {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff8ed;
+}
+
+.current-batch strong {
+  color: var(--clay-dark);
+}
+
+.current-batch small {
+  color: var(--muted);
+  line-height: 1.45;
 }
 
 .safety-section {
@@ -478,60 +643,66 @@ input {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.examples-section {
+.rule-card a {
+  color: #fff;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.pathway-section {
   display: grid;
   gap: 30px;
+  border-top: 1px solid var(--line);
 }
 
-.meal-grid {
+.pathway-grid,
+.resource-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.meal-card {
-  overflow: hidden;
-  background: #fff;
-}
-
-.meal-photo {
-  min-height: 200px;
-  background:
-    linear-gradient(180deg, rgba(31, 29, 26, 0.05), rgba(31, 29, 26, 0.3)),
-    url("assets/suppertable-hero.png") center / cover;
-}
-
-.meal-photo.thai {
-  background-position: 58% 50%;
-  filter: hue-rotate(46deg) saturate(1.08);
-}
-
-.meal-photo.lebanese {
-  background-position: 34% 50%;
-  filter: hue-rotate(332deg) saturate(1.04);
-}
-
-.meal-body {
+.pathway-card,
+.resource-card {
   display: grid;
+  align-content: start;
   gap: 12px;
+  min-height: 220px;
   padding: 22px;
 }
 
-.tag {
+.pathway-card span,
+.resource-card span {
+  display: grid;
   width: fit-content;
-  border-color: rgba(102, 115, 75, 0.22);
-  color: var(--olive);
-  background: var(--olive-soft);
+  min-width: 42px;
+  height: 36px;
+  place-items: center;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--clay);
   font-size: 0.82rem;
+  font-weight: 950;
 }
 
-.meal-card strong {
+.resource-card span {
+  color: var(--charcoal);
+  background: var(--olive-soft);
+}
+
+.resource-card a {
   color: var(--clay-dark);
+  font-weight: 950;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
-.meal-card small {
-  color: var(--muted);
-  line-height: 1.5;
+.pathway-note {
+  align-content: start;
 }
 
 .pilot-strip {
@@ -656,30 +827,34 @@ input {
   text-underline-offset: 3px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1120px) {
   .nav-links {
     display: none;
   }
+}
 
+@media (max-width: 980px) {
   .hero {
     min-height: 84vh;
     padding-top: 118px;
   }
 
-  .simple-grid,
-  .host-section,
-  .customer-section,
+  .story-section,
+  .owner-section,
+  .discover-section,
   .safety-layout,
   .pilot-strip,
   .final-cta {
     grid-template-columns: 1fr;
   }
 
-  .host-panel {
+  .owner-panel {
     position: static;
   }
 
-  .meal-grid,
+  .kitchen-grid,
+  .pathway-grid,
+  .resource-grid,
   .check-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -721,17 +896,19 @@ input {
     padding: 62px 0;
   }
 
-  .card-grid.four,
-  .meal-grid,
-  .check-grid {
+  .step-list article,
+  .profile-body {
     grid-template-columns: 1fr;
   }
 
-  .card-grid article {
-    min-height: auto;
+  .profile-body dl div {
+    grid-template-columns: 1fr;
   }
 
-  .step-list article {
+  .kitchen-grid,
+  .pathway-grid,
+  .resource-grid,
+  .check-grid {
     grid-template-columns: 1fr;
   }
 

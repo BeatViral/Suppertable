@@ -1,6 +1,6 @@
 # SupperTable Brand Assets
 
-This folder contains the SupperTable logo source and generated browser/device icon package.
+This folder contains the SupperTable logo source and generated browser/device icon package for the branded local kitchen positioning.
 
 ## Source files
 
@@ -24,6 +24,6 @@ This folder contains the SupperTable logo source and generated browser/device ic
 - `android-chrome-384x384.png`
 - `android-chrome-512x512.png`
 - `maskable-icon-512x512.png`
-- `suppertable-social-card.png`
+- `suppertable-social-card.png` - social preview card for the local kitchen launch story
 
 The root `favicon.ico` and `site.webmanifest` reference this package.

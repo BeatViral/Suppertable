@@ -14,7 +14,7 @@ if (waitlistForm && formNote) {
     const email = new FormData(waitlistForm).get("email");
 
     formNote.textContent = email
-      ? "Thanks - we have noted your interest for the pilot."
+      ? "Thanks - we have noted your interest in launching or discovering a SupperTable kitchen."
       : "Add your email to join the pilot list.";
   });
 }

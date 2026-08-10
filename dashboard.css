@@ -365,7 +365,7 @@ a {
 
 .quick-grid,
 .aftercare-grid,
-.host-grid,
+.owner-grid,
 .application-flow,
 .admin-grid {
   display: grid;
@@ -440,7 +440,7 @@ h4 {
 .quick-grid p,
 .aftercare-grid p,
 .check-card p,
-.listing-card p,
+.kitchen-result-card p,
 .detail-content p,
 .plain-list li {
   margin: 0;
@@ -524,13 +524,13 @@ h4 {
   align-items: start;
 }
 
-.listing-grid {
+.kitchen-result-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.listing-card {
+.kitchen-result-card {
   position: relative;
   overflow: hidden;
   padding: 0;
@@ -542,19 +542,19 @@ h4 {
   box-shadow: 0 12px 30px rgba(38, 17, 9, 0.08);
 }
 
-.listing-card.active {
+.kitchen-result-card.active {
   border-color: var(--pomegranate);
   box-shadow: 0 0 0 3px rgba(215, 38, 61, 0.12), 0 16px 42px rgba(38, 17, 9, 0.12);
 }
 
-.listing-card img {
+.kitchen-result-card img {
   display: block;
   width: 100%;
   aspect-ratio: 1.45 / 1;
   object-fit: cover;
 }
 
-.listing-card > div {
+.kitchen-result-card > div {
   padding: 16px;
 }
 
@@ -596,34 +596,34 @@ h4 {
   background: var(--rose);
 }
 
-.listing-card h4 {
+.kitchen-result-card h4 {
   font-size: 1.16rem;
 }
 
-.listing-card dl {
+.kitchen-result-card dl {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   margin: 14px 0;
 }
 
-.listing-card dl div {
+.kitchen-result-card dl div {
   padding: 10px;
   border-radius: 8px;
   background: #fff6e4;
 }
 
-.listing-card dt {
+.kitchen-result-card dt {
   font-weight: 950;
 }
 
-.listing-card dd {
+.kitchen-result-card dd {
   margin: 2px 0 0;
   color: var(--muted);
   font-size: 0.74rem;
 }
 
-.listing-card small {
+.kitchen-result-card small {
   color: rgba(23, 18, 15, 0.64);
   font-weight: 850;
 }
@@ -686,7 +686,7 @@ h4 {
 }
 
 .detail-columns > div,
-.host-strip,
+.owner-strip,
 .review-stack,
 .checkout-card {
   padding: 15px;
@@ -702,7 +702,7 @@ h4 {
   line-height: 1.58;
 }
 
-.host-strip {
+.owner-strip {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -720,7 +720,7 @@ h4 {
   font-weight: 950;
 }
 
-.host-strip span {
+.owner-strip span {
   display: block;
   margin-top: 4px;
   color: var(--muted);
@@ -802,7 +802,7 @@ h4 {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.host-grid {
+.owner-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -987,9 +987,9 @@ h4 {
 
   .quick-grid,
   .aftercare-grid,
-  .host-grid,
+  .owner-grid,
   .application-flow,
-  .listing-grid,
+  .kitchen-result-grid,
   .filter-bar,
   .detail-columns,
   .checkout-card > div:first-child,
