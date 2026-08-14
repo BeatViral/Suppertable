@@ -9,3 +9,4 @@
 .press-release + .press-release{border-top:1px solid var(--line)}
 .press-page-logo{display:block;width:min(260px,58vw);height:auto;margin:0 0 28px}
 .footer-copy{display:grid;gap:3px}.footer-copy p:last-child{font-size:.74rem;color:#9eb7ac}.footer-philosophy{color:#f5cf7a;font-weight:700;letter-spacing:.025em}.footer-origin{font-size:.78rem;color:#b8cbc1}.footer-links{display:flex;flex-wrap:wrap;gap:14px}.footer-links a{text-decoration:underline;text-underline-offset:4px}.brand-philosophy{margin:0 0 13px;color:#168a73;font-family:"Playfair Display",Georgia,serif;font-size:1.2rem;font-weight:700;letter-spacing:-.025em}@media(max-width:800px){.footer-links{gap:16px}}
+.footer-lockup{width:210px;opacity:.96}.press-page-logo{width:min(310px,70vw)}@media(max-width:800px){.footer-lockup{width:176px}}
