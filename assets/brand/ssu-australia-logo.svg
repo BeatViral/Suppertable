@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 190" role="img" aria-label="SSU Australia">
-  <text x="0" y="118" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="132" font-weight="900" letter-spacing="-12">S</text>
-  <path d="M133 67L167 33L201 67H183V126H151V67H133Z" fill="#DF7457"/>
-  <text x="211" y="118" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="132" font-weight="900" letter-spacing="-12">SU</text>
-  <rect x="3" y="140" width="74" height="7" rx="3.5" fill="#DF7457"/>
-  <text x="0" y="181" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="45" font-weight="900" letter-spacing="1.5">AUSTRALIA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 270" role="img" aria-label="SSU Australia — Serve Something Unique. The home of branded local kitchens.">
+  <text x="0" y="111" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="126" font-weight="900" letter-spacing="-10">S</text>
+  <path d="M126 65L158 33L190 65H173V121H143V65H126Z" fill="#DF7457"/>
+  <text x="200" y="111" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="126" font-weight="900" letter-spacing="-10">SU</text>
+  <text x="2" y="157" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="44" font-weight="900" letter-spacing="1.4">AUSTRALIA</text>
+  <rect x="2" y="177" width="88" height="7" rx="3.5" fill="#DF7457"/>
+  <text x="2" y="222" fill="#173D35" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800">Serve Something Unique.</text>
+  <text x="2" y="260" fill="#173D35" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" letter-spacing=".15">The home of branded local kitchens.</text>
 </svg>
