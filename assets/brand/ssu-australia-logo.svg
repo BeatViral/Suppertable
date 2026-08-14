@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 270" role="img" aria-label="SSU Australia — Serve Something Unique. The home of branded local kitchens.">
-  <text x="0" y="111" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="126" font-weight="900" letter-spacing="-10">S</text>
-  <path d="M126 65L158 33L190 65H173V121H143V65H126Z" fill="#DF7457"/>
-  <text x="200" y="111" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="126" font-weight="900" letter-spacing="-10">SU</text>
-  <text x="2" y="157" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="44" font-weight="900" letter-spacing="1.4">AUSTRALIA</text>
-  <rect x="2" y="177" width="88" height="7" rx="3.5" fill="#DF7457"/>
-  <text x="2" y="222" fill="#173D35" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800">Serve Something Unique.</text>
-  <text x="2" y="260" fill="#173D35" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" letter-spacing=".15">The home of branded local kitchens.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 250" role="img" aria-label="SSU Australia — Serve Something Unique. The home of branded local kitchens.">
+  <text x="0" y="101" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="112" font-weight="900" letter-spacing="-9">S</text>
+  <path d="M114 59L143 30L172 59H157V108H129V59H114Z" fill="#DF7457"/>
+  <text x="181" y="101" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="112" font-weight="900" letter-spacing="-9">SU</text>
+  <text x="2" y="140" fill="#173D35" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="38" font-weight="900" letter-spacing="1.2">AUSTRALIA</text>
+  <rect x="2" y="156" width="62" height="6" rx="3" fill="#DF7457"/>
+  <text x="2" y="198" fill="#173D35" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800">Serve Something Unique.</text>
+  <text x="2" y="232" fill="#173D35" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">The home of branded local kitchens.</text>
 </svg>
