@@ -3,6 +3,7 @@ import type { FormEvent } from 'react'
 import { z } from 'zod'
 import { supabase, supabaseConfigured } from './lib/supabase'
 import type { Application, ApplicationStatus, PlatformSettings, Profile } from './lib/types'
+import DemoApp from './DemoApp'
 
 const applicationSchema = z.object({
   fullName: z.string().trim().min(2, 'Please enter your name.'),
@@ -23,6 +24,7 @@ const statusLabel: Record<ApplicationStatus, string> = {
 }
 
 function App() {
+  if (!supabaseConfigured) return <DemoApp />
   const [view, setView] = useState<View>('apply')
   const [profile, setProfile] = useState<Profile | null>(null)
   const [application, setApplication] = useState<Application | null>(null)
