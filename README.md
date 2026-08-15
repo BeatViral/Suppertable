@@ -1,27 +1,29 @@
-# SupperTable
+# SSU Australia
 
-SupperTable is the home of branded local kitchens. It helps talented cooks launch independent kitchen brands using the kitchen they already have, with setup, food safety and council steps, storefronts, ordering, pickup and local delivery.
+SSU Australia is the home of branded local kitchens. It helps talented cooks launch independent kitchen brands using the kitchen they already have, with setup, food safety and council steps, storefronts, ordering, pickup and local delivery.
 
-This repository currently contains a self-contained landing page prototype for the SupperTable concept.
+This repository currently contains the public SSU Australia site. The application is being evolved into a real marketplace in deliberate phases.
 
 ## What is included
 
-- Simple, warm landing page for SupperTable
-- Customer, kitchen owner, and admin review dashboard prototype
-- Kitchen owner setup backend with application packet, council pathway form, uploads, insurance, menu, pricing, and timings
-- Customer ordering, kitchen setup, and safety pathway sections
-- Plain-language pickup and delivery positioning
-- Food safety, pickup/delivery fulfilment, and council-aware kitchen owner messaging
-- Generated hero image stored locally in `assets/`
-- Complete logo, favicon, app-icon, and social-card package in `assets/brand/`
-- No build step or package install required
+- Existing public marketing site, retained without a redesign
+- Public marketing site, News and Founding Kitchen application entry point
+- SSU Australia brand, legal, crawler and social-sharing assets
+- Phase 1 React application in [`app`](app): Supabase authentication, secured roles, Founding Kitchen applications and review workflow
+- Supabase database migration in [`supabase/migrations/20260815_phase1.sql`](supabase/migrations/20260815_phase1.sql)
 
 ## Open locally
 
-Open `index.html` directly in a browser.
+The existing public website can still be opened from `index.html`.
 
-Open `dashboard.html` to explore the customer, kitchen owner, and admin review product workspace prototype.
+For the Phase 1 application:
 
-## Project direction
+1. Copy `app/.env.example` to `app/.env.local` and add the Supabase URL and anon key.
+2. Run the SQL migration in the Supabase SQL Editor.
+3. Run `npm install` then `npm run dev` from `app`.
 
-The next version can be migrated into a full app stack once the first Northern Rivers kitchen pilot begins.
+The production build is created with `npm run build` from `app`.
+
+## Marketplace direction
+
+The V1 marketplace will use React/TypeScript, Supabase and Stripe Connect. Kitchen food sales will use Stripe Connect direct charges, with the kitchen as merchant of record and SSU charging an admin-configurable application fee. See the implementation plan for scope, sequencing and operational boundaries.
